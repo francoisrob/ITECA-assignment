@@ -1,0 +1,12 @@
+{
+    "name": "francois/assignmentq1",
+    "description": "basic login and sign up using php and mysql",
+    "require": {
+        "vlucas/phpdotenv" :"^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Francois\\Assignmentq1\\": "src/"
+        }
+    }
+}
