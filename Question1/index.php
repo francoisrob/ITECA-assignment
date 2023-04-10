@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Log In</h1>
-    <form action="/php/database.php" method="post">
+    <form action="php/database.php" method="post">
         <!-- email -->
         <label for="email">Email</label>
         <input type="text" name="email" id="email"></br>
