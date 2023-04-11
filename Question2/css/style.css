@@ -1,116 +1,124 @@
-
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f6f6f6;
-  }
-  
-  .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 5% 2%;
-  }
-  
-  h1 {
-    font-size: 3em;
-    font-weight: 700;
-    text-align: center;
-    color: #333;
-    margin-top: 0;
-  }
-  
-  p {
-    font-size: 1.5em;
-    text-align: center;
-    color: #666;
-    margin-bottom: 5vw;
-  }
-  
-  .button-primary {
-    display: inline-block;
-    width: 50%;
-    height: 3em;
-    background-color: #333;
-    color: #fff;
-    font-size: 3vw;
-    font-weight: 700;
-    text-align: center;
-    line-height: 3em;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid #333;
-    position: relative;
-    bottom: 2vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .button-primary:hover {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 5vw;
-  }
-  
-  .feature {
-    width: 45%;
-    height: fit-content;
-    border: 1vw solid #333;
-    margin-bottom: 1vw;
-  }
-  
-  .feature img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .feature-text {
-    padding: 2vw;
-    background-color: #fff;
-    box-shadow: 0px 0px 1vw rgba(0,0,0,0.1);
-    border-radius: 5px;
-  }
-  
-  .feature-title {
-    font-size: 5vw;
-    font-weight: 700;
-    color: #333;
-    margin-top: 0;
-    text-align: center;
-  }
-  
-  .feature-description {
-    font-size: 3vw;
-    color: #666;
-  }
-  
-  .featured {
-    width: 100%;
-    border: 1vw solid transparent;
-    background-color: #f6f6f6;
-    margin-bottom: 1vw;
-    border-image: linear-gradient(to right, #f00, #ff7f00, #ff0, #0f0, #00f, #8b00ff) 1;
-    border-image-slice: 1;
-  }
-  
-  .featured img {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-  
-  .delivery-details {
-    background-color: #ffeb3b;
-    color: #000;
-    padding: 1vw;
-    text-align: center;
-    font-weight: bold;
-  }
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5% 2%;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+  color: #666;
+  margin-bottom: 5vw;
+}
+
+.button-primary {
+  display: inline-block;
+  width: 50%;
+  height: 3em;
+  background-color: #333;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3em;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #333;
+  position: relative;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-primary:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+
+.feature {
+  width: 45%;
+  height: fit-content;
+  border: 1vw solid #333;
+  margin-bottom: 1vw;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-text {
+  padding: 2vw;
+  background-color: #fff;
+  box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.feature-title {
+  font-size: 5vw;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+  text-align: center;
+}
+
+.feature-description {
+  font-size: 3vw;
+  color: #666;
+}
+
+.featured {
+  width: 100%;
+  border: 1vw solid transparent;
+  background-color: #f6f6f6;
+  margin-bottom: 1vw;
+  border-image: linear-gradient(
+      to right,
+      #f00,
+      #ff7f00,
+      #ff0,
+      #0f0,
+      #00f,
+      #8b00ff
+    )
+    1;
+  border-image-slice: 1;
+}
+
+.featured img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.delivery-details {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 1vw;
+  text-align: center;
+  font-weight: bold;
+}

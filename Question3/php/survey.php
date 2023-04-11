@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,9 @@
             font-weight: bold;
         }
 
-        input[type=text], input[type=number], textarea {
+        input[type=text],
+        input[type=number],
+        textarea {
             width: 80%;
             padding: 10px;
             margin-bottom: 20px;
@@ -68,6 +71,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Kimiko Entertainment Survey</h1>
@@ -83,4 +87,5 @@
         </form>
     </div>
 </body>
+
 </html>

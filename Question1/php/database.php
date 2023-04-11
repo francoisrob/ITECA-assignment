@@ -13,30 +13,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $db->closedb();
 }
 
-class Database {
+class Database
+{
     public $host = "localhost";
     public $username = "root";
     public $password = "";
     public $database = "gym";
     public $conn;
 
-    function connectdb () {
+    function connectdb()
+    {
         $this->password = $_ENV["MYSQLPASS"];
         $mysqli = new mysqli($this->host, $this->username, $this->password, $this->database);
         if ($mysqli->connect_errno) {
             return False;
-        }
-        else {
+        } else {
             $this->conn = $mysqli;
             return True;
         }
     }
 
-    function closedb () {
+    function closedb()
+    {
         mysqli_close($this->conn);
     }
 
-    function validate ($email, $password) {
+    function validate($email, $password)
+    {
         if ($this->connectdb()) {
             $sql = "SELECT * FROM members WHERE email = '$email' AND password = '$password'";
             $result = $this->conn->query($sql);
@@ -45,12 +48,10 @@ class Database {
                 $name = $data['first_name'];
                 $surname = $data['last_name'];
                 echo "<h1>Welcome $name $surname</h1>";
-            }
-            else {
+            } else {
                 echo "Login Failed";
             }
-        }
-        else {
+        } else {
             echo "Connection Failed";
         }
     }
