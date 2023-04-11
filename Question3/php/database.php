@@ -54,7 +54,8 @@ class Database
         $address = $this->address;
         $gender = $this->gender;
         $favorite_character = $this->favorite_character;
-        $SQL = "INSERT INTO members (name, email, age, address, gender, favourite_character) VALUES ('$name', '$email', '$age', '$address', '$gender', '$favorite_character')";
+        $SQL = "INSERT INTO members (name, email, age, address, gender, favourite_character) 
+        VALUES ('$name', '$email', '$age', '$address', '$gender', '$favorite_character')";
         $result = $this->conn->query($SQL);
         if ($result) {
             echo "User added successfully";
@@ -78,25 +79,5 @@ class Database
     {
         mysqli_close($this->conn);
     }
-
-    function validate($email, $password)
-    {
-        if ($this->connectdb()) {
-            $sql = "SELECT * FROM members WHERE email = '$email' AND password = '$password'";
-            $result = $this->conn->query($sql);
-            if ($result->num_rows > 0) {
-                $data = $result->fetch_assoc();
-                $name = $data['first_name'];
-                $surname = $data['last_name'];
-                echo "<h1>Welcome $name $surname</h1>";
-            } else {
-                echo "Login Failed";
-            }
-        } else {
-            echo "Connection Failed";
-        }
-    }
-
-
 }
 ?>
