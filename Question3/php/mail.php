@@ -7,11 +7,22 @@ require '../vendor/phpmailer/phpmailer/src/Exception.php';
 require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require '../vendor/phpmailer/phpmailer/src/SMTP.php';
 require '../vendor/autoload.php';
+require 'database.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $age = $_POST['age'];
+    $address = $_POST['address'];
+    $gender = $_POST['gender'];
+    $favorite_character = $_POST['favorite_character'];
+    $db = new Database($name, $email, $age, $address, $gender, $favorite_character);
+    $db->adduser();
+}
 
 $mail = new Mail();
 $mail->sendregister();
 $mail->sendsurvey();
-
 header("Location: ../index.php");
 
 class Mail

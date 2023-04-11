@@ -36,8 +36,7 @@
             font-weight: bold;
         }
 
-        input[type=text],
-        input[type=number],
+        input,
         textarea {
             width: 80%;
             padding: 10px;
@@ -50,18 +49,20 @@
 
         button {
             background-color: #800000;
+            width: 30%;
             color: #ffffff;
-            border: none;
-            border-radius: 5px;
+            border: 1px solid #800000;
+            border-radius: 1vw;
             padding: 1vw;
             font-size: 1vw;
             font-weight: bold;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: 0.3s ease-in-out;
         }
 
-        button[type=submit]:hover {
-            background-color: #9b2c2c;
+        button:hover {
+            background-color: #ffffff;
+            color: #800000;
         }
 
         .error-message {
